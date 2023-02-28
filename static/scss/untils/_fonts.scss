@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'UniNeue';
+  src: url('../fonts/uni-neue/UniNeueRegular.eot');
+  src: local('UniNeueRegular'), local('UniNeueRegular'),
+  url('../fonts/uni-neue/UniNeueRegular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/uni-neue/UniNeueRegular.woff2') format('woff2'),
+  url('../fonts/uni-neue/UniNeueRegular.woff') format('woff'),
+  url('../fonts/uni-neue/UniNeueRegular.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'UniNeue';
+  src: url('../fonts/uni-neue/UniNeueBook.eot');
+  src: local('UniNeueBook'), local('UniNeueBook'),
+  url('../fonts/uni-neue/UniNeueBook.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/uni-neue/UniNeueBook.woff2') format('woff2'),
+  url('../fonts/uni-neue/UniNeueBook.woff') format('woff'),
+  url('../fonts/uni-neue/UniNeueBook.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'UniNeue';
+  src: url('../fonts/uni-neue/UniNeueBold.eot');
+  src: local('UniNeueBold'), local('UniNeueBold'),
+  url('../fonts/uni-neue/UniNeueBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/uni-neue/UniNeueBold.woff2') format('woff2'),
+  url('../fonts/uni-neue/UniNeueBold.woff') format('woff'),
+  url('../fonts/uni-neue/UniNeueBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+$UniNeue: 'UniNeue';
+$Inter: 'Inter', sans-serif;
+
+$MainFont: 'Montserrat', sans-serif;
+
+@font-face {
+  font-family: 'Montserrat Black';
+  src: url('../fonts/Montserrat/Montserrat-Black.eot');
+  src: local('Montserrat'), local('Montserrat'),
+  url('../fonts/Montserrat/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Montserrat/Montserrat-Black.woff2') format('woff2'),
+  url('../fonts/Montserrat/Montserrat-Black.woff') format('woff'),
+  url('../fonts/Montserrat/Montserrat-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+$MontserratFont : 'Montserrat Black';

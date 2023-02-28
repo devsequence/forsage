@@ -1,0 +1,40 @@
+.header{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin:  0 auto;
+  padding: 12px 0;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-logo{}
+  &-contact{
+    display: flex;
+    flex-wrap: wrap;
+    a{
+      font-family: $Inter;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: $white;
+      margin-left: 53px;
+      display: flex;
+      align-items: center;
+      .icon{
+        width: 13px;
+        height: 13px;
+        fill: #ED1C24;
+        margin-right: 5px;
+      }
+      &:first-of-type{
+        margin-left: 0;
+      }
+      &.header-email{
+        font-weight: 400;
+      }
+    }
+  }
+}
