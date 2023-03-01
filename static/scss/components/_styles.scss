@@ -210,19 +210,19 @@ input{
 }
 .btn-secondary{
   font-family: $MainFont;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 16px;
   text-align: center;
-  color: $primary;
-  padding: 18px 53px;
-  background: #FFFFFF;
-  border:1px solid #FF7B01;
-  border-radius: 6px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 20px 40px;
+  background: transparent;
+  border: 1px solid #ED1C24;
+  color: #FFFFFF;
   &:hover{
-    background: $primary;
-    color: $white;
+    background: #ED1C24;
+    box-shadow: 0px 13px 22px rgba(237, 28, 36, 0.24);
   }
 }
 .title-section{
@@ -232,99 +232,55 @@ input{
   font-size: 70px;
   line-height: 79px;
   margin-bottom: 40px;
-  -webkit-text-stroke: 5px #fff;
+  -webkit-text-stroke: 3px #fff;
   letter-spacing: 0.01em;
   color: #262B3B;
   position: relative;
   text-shadow: 0px 4px 24px rgba(16, 21, 38, 0.09);
   z-index: 1;
-  &:after{
-    position: absolute;
-    content: '';
-    top: 50%;
-    margin-top: -63px;
-    right: 0;
-    z-index: -1;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='122' height='126' viewBox='0 0 122 126' fill='none'%3E%3Cpath d='M43.5138 0H122L78.4862 126H0L43.5138 0Z' fill='%23ED1C24'/%3E%3C/svg%3E");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 128px;
-    height: 126px;
-
-  }
-  h2{
-    font-size: inherit;
-    line-height: inherit;
-    color: $default;
-  }
   span{
-    color: $primary;
+    position: relative;
+    display: inline-block;
+    &:after{
+      position: absolute;
+      content: '';
+      top: 50%;
+      margin-top: -63px;
+      right: 0;
+      z-index: -1;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='122' height='126' viewBox='0 0 122 126' fill='none'%3E%3Cpath d='M43.5138 0H122L78.4862 126H0L43.5138 0Z' fill='%23ED1C24'/%3E%3C/svg%3E");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 128px;
+      height: 126px;
+    }
+  }
+  b{
+    color: #ED1C24;
   }
   &.title-section__white{
     color: $white;
   }
 }
 .subtitle-section{
-  text-align: center;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 36px;
-  color: $default;
+  font-family: $MontserratFont;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  span{
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 100px;
+    letter-spacing: 0.01em;
+    color: #ED1C24;
+    -webkit-text-stroke: 3px #fff;
+  }
   &.subtitle-section__white{
     color: $white;
-  }
-}
-.text-section{
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 27px;
-  color: $secondary;
-  p{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 36px;
-    margin-bottom: 10px;
-  }
-  a{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 36px;
-    color: $primary;
-    text-decoration: underline 1px dashed $primary;
-  }
-  ul{
-    margin-top: 18px;
-    margin-bottom: 20px;
-    li{
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 36px;
-      padding-left: 57px;
-      color: #2C2C2C;
-      margin-bottom: 13px;
-      position: relative;
-      &:before{
-        position: absolute;
-        content: '';
-        left: 0;
-        top: 0;
-        width: 39px;
-        height: 39px;
-        border-radius: 50%;
-        background-image: url("data:image/svg+xml,%3Csvg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 6.67391L4.2381 10L13 1' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-        background-size: 11px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: $primary;
-      }
-    }
-  }
-  h3{
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    color: #2C2C2C;
   }
 }
 ol{
