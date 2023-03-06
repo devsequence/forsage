@@ -1,6 +1,7 @@
+AOS.init({disable: 'mobile'});
 $(".sale-slider").slick({
     fade: true,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 2000,
     prevArrow: $('.sale-slider__nav .prev'),
     nextArrow: $('.sale-slider__nav .next'),
@@ -12,10 +13,48 @@ $(".partner-slider").slick({
     infinite: true,
     speed: 300,
     slidesToShow: 5,
-    slidesToScroll: 5,
-    prevArrow: $('.partner-slider .prev'),
-    nextArrow: $('.partner-slider .next'),
+    slidesToScroll: 2,
+    prevArrow: $('.partner-slider__nav .prev'),
+    nextArrow: $('.partner-slider__nav .next'),
+
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 568,
+            settings: {
+                slidesToShow: 2,
+            }
+        }
+    ]
 });
+$('.select-block__title').on('click', function (e) {
+    var $this = $(this);
+    $this.next().toggleClass('active');
+});
+$('.select-block li').on('click', function (e) {
+    var $this = $(this);
+    $this.parent().removeClass('active');
+    $this.parent().prev().text($this.text());
+    $this.parent().next().val($this.text());
+    console.log($this.parent().next().val());
+});
+// $('.order-form__button button').on('click', function (e) {
+//     if($(".select").prop('required')){
+//         console.log('ska');
+//     }
+// });
+//
 //
 //
 // $('.header-btn').on('click', function (e) {
